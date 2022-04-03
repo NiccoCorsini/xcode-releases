@@ -12,4 +12,6 @@
 
 ## Credits
 
--[xcodereleases](https://xcodereleases.com/) for API -[Apple](https://apple.com) for Xcode
+-[xcodereleases](https://xcodereleases.com/) for API
+
+-[Apple](https://apple.com) for Xcode
