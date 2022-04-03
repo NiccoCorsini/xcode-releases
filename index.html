@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./assets/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Xcode | Releases</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Xcode releases list</h1>
+        <div class="filter-nav">
+          <nav>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="filter"
+                  id="all"
+                  onclick="filterList()"
+                  checked
+                />
+                All
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="filter"
+                  id="release"
+                  onclick="filterList('stable')"
+                />
+                Releases
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="filter"
+                  id="betas"
+                  onclick="filterList('beta')"
+                />
+                Betas
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="scrollable">
+        <table>
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Release</th>
+              <th>Build</th>
+              <th>Released</th>
+              <th>Requires</th>
+              <th>MacOS SDKs</th>
+              <th>iOS SDKs</th>
+              <th>watchOS SDKs</th>
+              <th>tvOS SDKs</th>
+              <th>Download</th>
+              <th>Release Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="go-top" onclick="scrollNow()">&#8679;</div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
