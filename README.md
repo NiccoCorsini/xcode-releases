@@ -1,6 +1,6 @@
 # Xcode Releases List
 
-### 🚀 Live:
+### 🚀 Live: https://xcode-releases-list.netlify.app/
 
 <br>
 
